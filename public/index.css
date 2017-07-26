@@ -1,0 +1,29 @@
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.outer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 70px;
+}
