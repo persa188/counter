@@ -8,8 +8,11 @@
 <body>
 <div class="outer">
   <div class="inner">
-    <div><div id="el"></div> since last integration test failed.</div>
-    <div><button type="button" onclick="view.reset()">reset</button></div>
+    <div>Integration tests have been <span id="integ_status"></span> for:
+      <div id="el"></div></div>
+    <div class="btncntr">
+      <div><button type="button" class="button" onclick="view.toggle_status()">toggle status</button></div>
+    </div>
   </div>
 </div>
 <!-- js -->

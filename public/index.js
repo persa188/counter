@@ -3,20 +3,23 @@ var view = (function(){
   "use strict";
   //following lab2/3 style
   var view = {};
+  var integ_st = document.getElementById('integ_status');
 
   //load initial gui stuff
   window.onload = function() {
-      doAjax('GET', '/last/fail', null,
+      doAjax('GET', '/api/status', null,
       true, function(err, data){
             if (err) console.error(err);
             else {
-              count(data.lastFail);
+              set_status(data.status)
+              sessionStorage.setItem("status", data.status)
+              count(data.tstmp);
             }
         });
   };
 
-  var count = function (lastfail) {
-      console.log(lastfail);
+  var count = function (t) {
+      console.log(t);
       var timer = {
               showTime: function (cDisplay, timestamp) {
                   var now = new Date(),
@@ -25,11 +28,26 @@ var view = (function(){
                   setTimeout(function () {timer.showTime(cDisplay, timestamp);}, 1000);
               }
           };
-      timer.showTime($('#el'), lastfail);
+      timer.showTime($('#el'), t);
   };
 
-  view.reset = function() {
-    doAjax('POST', '/reset/fail', {}, true, function(err, data) {
+  var set_status = function (st) {
+    if (st == "broken") {
+      integ_st.innerHTML= "failing"
+      integ_st.className = "failing";
+    } else if (st == "passing") {
+      integ_st.innerHTML= "passing"
+      integ_st.className = "passing";
+    } else {
+      integ_st.innerHTML = "unkown"
+    }
+  }
+
+  view.toggle_status = function() {
+    var st = sessionStorage.getItem('status')
+    if (st == 'broken') st = 'passing';
+    else st = 'broken';
+    doAjax('POST', '/api/status', {status: st}, true, function(err, data) {
       location.reload();
     });
   }

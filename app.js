@@ -7,13 +7,13 @@ var express = require('express'),
 app.use(bodyParser.json({limit: '50mb'}));
 
 //nedb conf
-var counter = new Datastore({ filename: 'db/counter.db',
+var status = new Datastore({ filename: 'db/status.db',
   autoload: true,
   timestampData: true
 });
 
 var Count = function(timestamp) {
-  this.lastFail = timestamp;
+  this.status = timestamp;
 };
 
 app.use(function (req, res, next){
@@ -27,17 +27,17 @@ app.get('/', function (req, res) {
   res.redirect('index.html');
 });
 
-app.get('/last/fail', function(req, res) {
-  counter.findOne({}).sort({createdAt:-1}).exec(function(err, data) {
+app.get('/api/status', function(req, res) {
+  status.findOne({}).sort({createdAt:-1}).exec(function(err, data) {
     if (err) res.status(500).end(JSON.stringify({"response":"server err"}));
     res.status(200).end(JSON.stringify(data));
   });
 });
 
-app.post('/reset/fail', function(req, res) {
-  counter.insert({lastFail: Date.now()},function(err, doc) {
-    if (err) res.status(500).end(JSON.stringify({"response":"server err"}));
-    res.status(200).end(JSON.stringify(doc));
+app.post('/api/status/', function(req, res) {
+    status.insert({status: req.body.status, tstmp: Date.now()},function(err, doc) {
+      if (err) res.status(500).end(JSON.stringify({"response":"server err"}));
+      res.status(200).end(JSON.stringify(doc));
   });
 });
 

@@ -23,7 +23,47 @@ body {
 
 .inner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  width: 100%;
   height: 70px;
+}
+
+#el {
+  text-align: center;
+  font-size: 36px;
+}
+
+.btncntr{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 30%;
+}
+
+.passing {
+  color: green;
+}
+
+.failing {
+  color: red;
+}
+
+.button {
+    background-color: #D3D3D3;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.button:hover {
+  background-color: #a8a8a8;
 }
