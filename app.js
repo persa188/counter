@@ -2,7 +2,8 @@ var express = require('express'),
   app = express(),
   path = require('path'),
   Datastore = require('nedb'),
-  bodyParser = require('body-parser');
+  bodyParser = require('body-parser'),
+  moment = require('moment');
 
 app.use(bodyParser.json({limit: '50mb'}));
 
@@ -35,7 +36,7 @@ app.get('/api/status', function(req, res) {
 });
 
 app.post('/api/status/', function(req, res) {
-    status.insert({status: req.body.status, tstmp: Date.now()},function(err, doc) {
+    status.insert({status: req.body.status, tstmp: moment.utc().valueOf()},function(err, doc) {
       if (err) res.status(500).end(JSON.stringify({"response":"server err"}));
       res.status(200).end(JSON.stringify(doc));
   });
