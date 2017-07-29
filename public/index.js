@@ -22,7 +22,7 @@ var view = (function(){
       console.log(t);
       var timer = {
               showTime: function (cDisplay, timestamp) {
-                  var now = Math.floor((new Date()).getTime()/1000),
+                  var now = new Date(),
   					time = new Date(now - Math.floor(timestamp));
                   cDisplay.html(time.getUTCHours() + ' hours ' + time.getUTCMinutes() + ' mins ' + time.getUTCSeconds() + ' secs');
                   setTimeout(function () {timer.showTime(cDisplay, timestamp);}, 1000);

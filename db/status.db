@@ -8,6 +8,7 @@
 {"status":"broken","tstmp":1501355916452,"_id":"Prev2EJUOpeAINmw","createdAt":{"$$date":1501355916452},"updatedAt":{"$$date":1501355916452}}
 {"status":"broken","_id":"SwRz7KrRRdOGWkJQ","createdAt":{"$$date":1501352456517},"updatedAt":{"$$date":1501352456517}}
 {"status":"broken","tstmp":1501355938387,"_id":"TtvJeKqddeF2HU4t","createdAt":{"$$date":1501355938387},"updatedAt":{"$$date":1501355938387}}
+{"status":"broken","tstmp":1501357289999,"_id":"V5Ki8YqMx6WxEzu1","createdAt":{"$$date":1501357290000},"updatedAt":{"$$date":1501357290000}}
 {"status":"passing","tstmp":1501356115748,"_id":"X9Qx3tHPubqbseVC","createdAt":{"$$date":1501356115749},"updatedAt":{"$$date":1501356115749}}
 {"status":"passing","tstmp":1501355915850,"_id":"aHPuKpjtVwyUUNFC","createdAt":{"$$date":1501355915850},"updatedAt":{"$$date":1501355915850}}
 {"status":"passing","tstmp":1501353890991,"_id":"aPqXv6HETUK5FIiV","createdAt":{"$$date":1501353890991},"updatedAt":{"$$date":1501353890991}}
@@ -15,11 +16,15 @@
 {"status":"broken","tstmp":1501355911111,"_id":"dWK57wNWcOGjFCKo","createdAt":{"$$date":1501355911112},"updatedAt":{"$$date":1501355911112}}
 {"status":"broken","tstmp":1501355914011,"_id":"eHg7F4janr7OwscB","createdAt":{"$$date":1501355914011},"updatedAt":{"$$date":1501355914011}}
 {"status":"passing","tstmp":1501355912024,"_id":"gQ9UCvHuwkFQBzKx","createdAt":{"$$date":1501355912024},"updatedAt":{"$$date":1501355912024}}
+{"status":"passing","tstmp":1501357291820,"_id":"gcOQfwaZQ2nU4204","createdAt":{"$$date":1501357291821},"updatedAt":{"$$date":1501357291821}}
 {"status":"broken","tstmp":1501353880710,"_id":"ih14FGATsI3Mtswr","createdAt":{"$$date":1501353880710},"updatedAt":{"$$date":1501353880710}}
 {"status":"broken","tstmp":1501356117604,"_id":"lQojdTVginMQVZaQ","createdAt":{"$$date":1501356117604},"updatedAt":{"$$date":1501356117604}}
 {"status":"broken","tstmp":1501355912678,"_id":"m87CpAPTF7wGmOw6","createdAt":{"$$date":1501355912678},"updatedAt":{"$$date":1501355912678}}
 {"status":"passing","tstmp":1501356119303,"_id":"nhNBIIc2sHhqdzK3","createdAt":{"$$date":1501356119304},"updatedAt":{"$$date":1501356119304}}
 {"status":"broken","tstmp":1501355952124,"_id":"rgWDhtXltvnSz8J6","createdAt":{"$$date":1501355952124},"updatedAt":{"$$date":1501355952124}}
 {"status":"broken","tstmp":1501354132007,"_id":"uoZX7CUCrZo6B2Ir","createdAt":{"$$date":1501354132007},"updatedAt":{"$$date":1501354132007}}
-{"status":"broken","tstmp":1501357289999,"_id":"V5Ki8YqMx6WxEzu1","createdAt":{"$$date":1501357290000},"updatedAt":{"$$date":1501357290000}}
-{"status":"passing","tstmp":1501357291820,"_id":"gcOQfwaZQ2nU4204","createdAt":{"$$date":1501357291821},"updatedAt":{"$$date":1501357291821}}
+{"status":"broken","tstmp":1501358986331,"_id":"Yf1kjxEjgii0sHsL","createdAt":{"$$date":1501358986332},"updatedAt":{"$$date":1501358986332}}
+{"status":"passing","tstmp":1501358987723,"_id":"IU1IwYiSO2sKAvsI","createdAt":{"$$date":1501358987724},"updatedAt":{"$$date":1501358987724}}
+{"status":"broken","tstmp":1501358988675,"_id":"TJbH5rDYfrwog897","createdAt":{"$$date":1501358988675},"updatedAt":{"$$date":1501358988675}}
+{"status":"passing","tstmp":1501359006283,"_id":"Sam13J2USBOfzcDo","createdAt":{"$$date":1501359006283},"updatedAt":{"$$date":1501359006283}}
+{"status":"broken","tstmp":1501359008212,"_id":"le3URSjT7gIpkJVT","createdAt":{"$$date":1501359008212},"updatedAt":{"$$date":1501359008212}}
